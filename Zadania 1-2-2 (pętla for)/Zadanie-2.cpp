@@ -9,7 +9,7 @@ int main(){
 	cin >> b;
 	for(int i=0; i < a; i++){
 		for(int j=0; j < b; j++){
-			if(j = 0,b) cout << "*";
+			if(i = 0, a) cout << "*";
 			else cout << " ";
 		}
 	cout << endl;
