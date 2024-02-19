@@ -5,11 +5,11 @@ int main(){
 	float liczba2;
 	double wynik;
 	char znak;
-    cout << "Podaj 1 liczbe: " << endl;
+    cout << "Podaj 1 liczbe: ";
     cin >> liczba1;
-    cout << "Podaj 2 liczbe: " << endl;
+    cout << "Podaj 2 liczbe: ";
     cin >> liczba2;
-    cout << "Wybierz operator arytmetyczny ( + oznacza dodawanie, - odejmowanie, * mnożenie, a / dzielenie )" << endl;
+    cout << "Wybierz operator arytmetyczny ( + oznacza dodawanie, - odejmowanie, * mnożenie, a / dzielenie ) ";
     cin >> znak;
 	switch( znak ){
     	case '+':
