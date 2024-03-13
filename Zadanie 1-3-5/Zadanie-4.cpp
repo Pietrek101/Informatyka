@@ -2,8 +2,10 @@
 using namespace std;
 int a = 0;
 int t[5];
-void SumTab(int b){
-	b = t[0]+=t[1]+=t[2]+=t[3]+=t[4];
+void SumTab(int ta[5]){
+	for(int i = 0; i < 5; i++){
+		ta[i] = t[i];
+		a+=ta[i];}
 }
 int main(){
 	cout << "Podaj 5 liczb, ktore nalezy zsumowac: " << endl;
