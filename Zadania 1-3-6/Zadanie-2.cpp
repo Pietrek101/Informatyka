@@ -18,12 +18,11 @@ int main(){
 	int wybor;
 	float a;
 	char d[7];
-	int c = 0;
     cout << "Witaj w ksiegarnii: " << endl << "Po jakiej kategorii chcial bys wyszukac ksiazke" << endl << "1. Rok wydania" << endl << "2. Cena" << endl << "3. Wydawnictwo" << endl << "0. Wyjscie" << endl;
 	cin >> wybor;
     switch( wybor ){
     case 1:
-        cout << "Podaj od jakiego roku chcesz zobaczyæ ksiazki: " << endl;
+        cout << "Podaj od jakiego roku chcesz zobaczyÄ‡ ksiazki: " << endl;
         cin >> a;
         a -= 1925;
         for(int licz=a; licz < 7; licz++){
@@ -31,7 +30,7 @@ int main(){
 		}
         break;
     case 2:
-        cout << "Podaj od jakiej ceny chcesz zobaczyæ ksiazki: " << endl;
+        cout << "Podaj od jakiej ceny chcesz zobaczyÄ‡ ksiazki: " << endl;
         cin >> a;
         a -= 23.54;
         cout << "Znalezione ksiazki: " << endl;
@@ -40,11 +39,10 @@ int main(){
 		}
         break;
     case 3:
-        cout << "Podaj od jakiego wydawcy chcesz zobaczyæ ksiazki: " << endl;
+        cout << "Podaj od jakiego wydawcy chcesz zobaczyÄ‡ ksiazki: " << endl;
         cin >> d;
-        cout << d << endl;
 		if(d[6] == '1'){
-        cout << "Tytul: " << ksiazki[0].tytul << "	Autor: " << ksiazki[0].autor << "	Rok: " << ksiazki[0].rok << "	Wydawnictwo: " << ksiazki[0].wydawnictwo << "	Cena: " << ksiazki[0].cena << endl;
+        	cout << "Tytul: " << ksiazki[0].tytul << "	Autor: " << ksiazki[0].autor << "	Rok: " << ksiazki[0].rok << "	Wydawnictwo: " << ksiazki[0].wydawnictwo << "	Cena: " << ksiazki[0].cena << endl;
 		cout << "Tytul: " << ksiazki[3].tytul << "	Autor: " << ksiazki[3].autor << "	Rok: " << ksiazki[3].rok << "	Wydawnictwo: " << ksiazki[3].wydawnictwo << "	Cena: " << ksiazki[3].cena << endl;
 		cout << "Tytul: " << ksiazki[6].tytul << "	Autor: " << ksiazki[6].autor << "	Rok: " << ksiazki[6].rok << "	Wydawnictwo: " << ksiazki[6].wydawnictwo << "	Cena: " << ksiazki[6].cena << endl;
 		}
